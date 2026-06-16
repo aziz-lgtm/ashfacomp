@@ -70,13 +70,14 @@
       margin-right: 6px;
       color: var(--accent);
     }
-
+  
     /* DESKTOP NAVIGATION */
     .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: clamp(0.1rem, 2vw, 2rem);
       align-items: center;
       flex-wrap: wrap;
+      /* font-size: clamp(); */
     }
 
     .nav-links a {
@@ -84,22 +85,28 @@
       font-weight: 500;
       color: #1e2f3f;
       transition: color 0.2s;
-      font-size: 1rem;
     }
 
-    .nav-links a:hover {
+    .nav-links a.nav:hover {
       color: var(--accent);
+    } 
+
+    .wa {
+      font-size: 1.5rem;
     }
 
     .btn-outline-call {
+      display: inline-flex;
       background: transparent;
       border: 2px solid var(--accent);
       padding: 8px 20px;
       border-radius: 40px;
       font-weight: 600;
       color: var(--accent);
-      transition: all 0.2s;
+      transition: all 10s;
+
     }
+
     .btn-outline-call i {
       margin-right: 8px;
     }
@@ -420,6 +427,19 @@
       font-size: 1.6rem;
       width: 32px;
     }
+
+    .addres {
+      text-decoration: none;
+    }
+
+    .addres:visited {
+      color: red;
+    }
+    
+    .addres:hover {
+      color: rgb(249, 217, 217);
+    }
+    
     .hours-list {
       list-style: none;
       margin-top: 12px;
