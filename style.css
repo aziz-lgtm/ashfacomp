@@ -430,6 +430,7 @@
 
     .addres {
       text-decoration: none;
+      color: white;
     }
 
     .addres:visited {
@@ -439,11 +440,16 @@
     .addres:hover {
       color: rgb(249, 217, 217);
     }
+
+    .addres:active {
+      color: white;
+    }
     
     .hours-list {
       list-style: none;
       margin-top: 12px;
     }
+
     .hours-list li {
       display: flex;
       justify-content: space-between;
