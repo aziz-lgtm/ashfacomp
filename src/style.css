@@ -312,11 +312,17 @@
     .hero-image {
       flex: 0.9;
       text-align: center;
+      
     }
-    .hero-image i {
-      font-size: 10rem;
-      color: var(--primary-soft);
-      opacity: 0.7;
+ 
+    .hero-image div img {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+      height: 100%;
+      width: 100%;   
+      border-radius: 50px;
     }
 
     /* ========== SECTIONS ========== */
