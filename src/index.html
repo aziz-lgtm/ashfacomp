@@ -8,6 +8,7 @@
   <!-- SEO META TAGS - Krusial untuk peringkat di Google & mesin pencari  -->
   <!-- ================================================================== -->
   <title>ASFA COMPUTER | Reparasi Komputer Profesional di Gemolong</title>
+  <link rel="icon" href="../assets/asfa_logo_clean.png">
   <meta name="description" content="ASFA COMPUTER - Reparasi komputer profesional di Gemolong. Servis laptop, PC, Mac, pemulihan data, upgrade SSD/RAM. Gratis diagnostik, harga terjangkau. Langsung antar tanpa janji. ⭐ 4.9 rating.">
   <meta name="keywords" content="reparasi komputer, service laptop jakarta, perbaikan pc, toko komputer, ASHFACOMP, perbaikan laptop, pemulihan data jakarta, upgrade ssd, virus removal">
   <meta name="author" content="ASFA COMPUTER">
@@ -63,7 +64,7 @@
         <a class = "nav" href="#services">Layanan</a>
         <a class = "nav" href="#contact">Kontak</a>
         
-        <a href="#" class="btn-outline-call"><i class="fab fa-whatsapp wa"></i>+62 813-9310-5254</a>
+        <a href="https://wa.me/6281393105254?text=Halo%20ASFA%20COMPUTER%2C%20saya%20ingin%20booking%20servis" target="blank" class="btn-outline-call"><i class="fab fa-whatsapp wa"></i>+62 813-9310-5254</a>
       </div>
       
       <!-- Hamburger Button (Mobile Only) -->
@@ -102,7 +103,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item"><span class="stat-number">500+</span> <span>Perangkat diperbaiki</span></div>
-          <div class="stat-item"><span class="stat-number">4.9★</span> <span>Rating Google</span></div>
+          <div class="stat-item"><span class="stat-number">4.4★</span> <span>Rating Google</span></div>
           <div class="stat-item"><span class="stat-number">24 jam</span> <span>Rata-rata selesai</span></div>
         </div>
       </div>
@@ -152,25 +153,22 @@
           <div class="service-icon"><i class="fas fa-laptop"></i></div>
           <h3>Perbaikan Laptop & PC</h3>
           <p>Ganti layar, perbaikan keyboard, bersihkan kipas, perbaikan motherboard.</p>
-          <span class="price-badge">Mulai Rp...</span>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-virus"></i></div>
           <h3>Hapus Virus & Malware</h3>
           <p>Scan sistem penuh, bersihkan, dan pasang perlindungan.</p>
-          <span class="price-badge">Mulai Rp...</span>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-database"></i></div>
           <h3>Pemulihan Data</h3>
           <p>Kembalikan file hilang, drive rusak, dan data terhapus.</p>
-          <span class="price-badge">Mulai Rp...</span>
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-microchip"></i></div>
           <h3>Upgrade & Optimalisasi</h3>
           <p>Upgrade SSD, pasang RAM, tuning performa.</p>
-          <span class="price-badge">Mulai Rp...</span>
+
         </div>
       </div>
     </div>
@@ -211,19 +209,23 @@
         <div class="contact-form">
           <h3>Minta perkiraan biaya reparasi</h3>
           <p style="margin-bottom: 20px;">Jelaskan masalah Anda, kami akan membalas dalam 2 jam.</p>
-          <form id="repairForm">
-            <div class="form-group"><input type="text" placeholder="Nama lengkap *" id="name" required></div>
-            <div class="form-group"><input type="email" placeholder="Alamat email *" id="email" required></div>
-            <div class="form-group"><input type="tel" placeholder="Nomor telepon" id="phone"></div>
+          <form id="repairForm" action="https://formspree.io/f/meewwjjy" method="post" target="blank">
+            <div class="form-group"><input type="text" placeholder="Nama lengkap *" id="name" name="nama" required></div>
+            <div class="form-group"><input type="email" placeholder="Alamat email *" id="email" name="email" required></div>
+            <div class="form-group"><input type="tel" placeholder="Nomor telepon" id="phone" name="telepon"></div>
             <div class="form-group">
-              <select id="device">
+              <select id="device" name="perangkat">
                 <option value="">Pilih tipe perangkat</option>
-                <option>Laptop (Windows)</option><option>MacBook / iMac</option>
-                <option>PC Desktop</option><option>Lainnya / Tidak yakin</option>
+                <option>Laptop (Windows)</option>
+                <option>MacBook / iMac</option>
+                <option>PC Desktop</option>
+                <option>Printer</option>
+                <option>Beli Accecories</option>
+                <option>Lainnya</option>
               </select>
             </div>
-            <div class="form-group"><textarea rows="3" placeholder="Jelaskan masalahnya... (contoh: tidak bisa boot, lemot, layar retak)" id="issue"></textarea></div>
-            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Kirim Permintaan</button>
+            <div class="form-group"><textarea rows="3" placeholder="Jelaskan masalahnya... (contoh: tidak bisa boot, lemot, black screen)" id="issue" name="issue"></textarea></div>
+            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Kirim ke E-mail</button>
             <p style="font-size: 12px; margin-top: 14px; text-align: center;">Estimasi biaya & jadwal akan kami balas</p>
           </form>
         </div>
@@ -238,8 +240,8 @@
       <div class="section-sub">Apa kata pelanggan tentang layanan ASFA COMPUTER</div>
       <div class="testimonial-grid">
         <div class="testi-card"><i class="fas fa-quote-left"></i><p>"Pelayanan ramah, untuk jasa servis sangat rekomended, juga menyediakan spare part komputer, laptop dan printer."</p><div class="client"> <strong><i class="fas fa-user-circle"></i>Widodo ayahe alya</strong> <span>⭐⭐⭐⭐⭐</span></div></div>
-        <div class="testi-card"><i class="fas fa-quote-left"></i><p>"Pemulihan data menyelamatkan file skripsiku! Sangat merekomendasikan."</p><div class="client"> <strong><i class="fas fa-user-circle"></i>David K.</strong> <span>⭐⭐⭐⭐⭐</span></div></div>
-        <div class="testi-card"><i class="fas fa-quote-left"></i><p>"Upgrade SSD dan RAM — seperti komputer baru. Toko lokal terbaik."</p><div class="client"> <strong><i class="fas fa-user-circle"></i>Linda T.</strong> <span>⭐⭐⭐⭐⭐</span></div></div>
+        <div class="testi-card"><i class="fas fa-quote-left"></i><p>"Tempat service laptop termurah dan terpercaya banget dah 👌 …"</p><div class="client"> <strong><i class="fas fa-user-circle"></i>Widada</strong> <span>⭐⭐⭐⭐⭐</span></div></div>
+        <div class="testi-card"><i class="fas fa-quote-left"></i><p>"Pelayanannya ramah. Tempatnya di samping selatan pos polisi perempatan gemolong. Cukup mudah untuk ditemukan"</p><div class="client"> <strong><i class="fas fa-user-circle"></i>Atina Barokatin</strong> <span>⭐⭐⭐⭐⭐</span></div></div>
         
       </div>
       
@@ -257,9 +259,6 @@
   </div>
 </footer>
 
-<!-- ================================================================== -->
-<!-- JAVASCRIPT EXTERNAL FILE                                           -->
-<!-- ================================================================== -->
 <script src="script.js"></script>
 </body>
 </html>

@@ -544,12 +544,6 @@
       font-size: 1.8rem;
       margin-bottom: 12px;
     }
-    /* .client {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      
-    } */
 
     .client {
       display: grid;
