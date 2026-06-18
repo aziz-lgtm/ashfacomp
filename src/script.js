@@ -73,6 +73,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  window.addEventListener('resize', () => {
+  if (window.innerWidth >= 825) {
+    closeMenu();
+  }
+});
+
+
+
+
   // ========== SMOOTH SCROLL UNTUK SEMUA ANCHOR LINK ==========
   // Melakukan smooth scroll ke section ketika link dengan href="#..." diklik
   const allAnchorLinks = document.querySelectorAll('a[href^="#"]');

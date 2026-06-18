@@ -44,6 +44,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+  <!-- api -->
+  <script>
+    fetch('/api/status')
+    .then(r => r.json())
+    .then(data => {
+      if (!data.active) {
+        window.location.href = '/suspended.html'
+      }
+    })
+  </script>
 
 </head>
 <body>
@@ -64,7 +74,7 @@
         <a class = "nav" href="#services">Layanan</a>
         <a class = "nav" href="#contact">Kontak</a>
         
-        <a href="https://wa.me/6281393105254?text=Halo%20ASFA%20COMPUTER%2C%20saya%20ingin%20booking%20servis" target="blank" class="btn-outline-call"><i class="fab fa-whatsapp wa"></i>+62 813-9310-5254</a>
+        <a href="https://wa.me/6281393105254?text=Halo%20ASFA%20COMPUTER%2C%20saya%20ingin%20booking%20servis" target="blank" class="btn-outline-call"><i class="fab fa-whatsapp wa"></i>Chat WA</a>
       </div>
       
       <!-- Hamburger Button (Mobile Only) -->
@@ -82,8 +92,9 @@
   <a href="#home" class="mobile-nav-link">Beranda</a>
   <a href="#services" class="mobile-nav-link">Layanan</a>
   <a href="#contact" class="mobile-nav-link">Kontak</a>
-  
-  <a href="https://wa.me/6281393105254?text=Halo%20ASFA%20COMPUTER%2C%20saya%20ingin%20booking%20servis" target="blank" class="btn-outline-call-mobile" id="mobileCallBtn"><i class="fas fa-phone-alt"></i> +62 857-4691-5869</a>
+  <div class="wa-mobile-icon">
+  <a href="https://wa.me/6281393105254?text=Halo%20ASFA%20COMPUTER%2C%20saya%20ingin%20booking%20servis" target="blank" class="btn-outline-call-mobile" id="mobileCallBtn"><i class="fab fa-whatsapp wa icon-wa"></i>Chat WA</a>
+  </div>
 </div>
 
 <!-- Overlay -->
