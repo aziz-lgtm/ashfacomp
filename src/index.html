@@ -45,15 +45,6 @@
   
   <link rel="stylesheet" href="style.css">
   <!-- api -->
-  <script>
-    fetch('/api/status')
-    .then(r => r.json())
-    .then(data => {
-      if (!data.active) {
-        window.location.href = '/suspended.html'
-      }
-    })
-  </script>
 
 </head>
 <body>
