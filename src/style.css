@@ -50,11 +50,19 @@
     /* ========== HEADER & NAVBAR ========== */
     .header {
       background: transparent;
-      box-shadow: 0 1px 0 var(--border-light);
       position: sticky;
       top: 0;
       z-index: 1000;
       border: none;
+      
+      transition: background 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .header.scrolled {
+      background: white;
+      /* backdrop-filter: blur(154px);
+      -webkit-backdrop-filter: blur(12px); */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
     .navbar {
@@ -99,8 +107,13 @@
     }
 
     .nav-links a.nav:hover {
-      color: var(--accent);
+      color: rgb(255, 255, 255);
+      transition: color 0.2s ease;
     } 
+
+    .header.scrolled .nav-links a.nav:hover {
+      color: var(--accent);
+    }
 
     .wa {
       font-size: 1.5rem;
@@ -118,12 +131,21 @@
 
     }
 
+    .header.scrolled .btn-outline-call{
+      border: 2px solid var(--accent);
+    }
+
     .btn-outline-call i {
       margin-right: 8px;
     }
     .btn-outline-call:hover {
       background: var(--primary-soft);
       color: white;
+    }
+
+    .header.scrolled .btn-outline-call:hover {
+      border: 2px solid var(--accent);
+      background: var(--accent)
     }
 
     /* ========== HAMBURGER MENU (MOBILE) ========== */
@@ -656,7 +678,8 @@
 
       .hero-mobile {
       display: block;
-       padding: 60px 0 70px 0;
+       margin-top: -4.7rem;
+      padding: 135px 0 70px 0;
       background: linear-gradient(135deg,  #f0f7ff 0%, #6eaaea 80%);
       }
 
@@ -727,7 +750,8 @@
 
       .hero-mobile {
       display: block;
-       padding: 60px 0 70px 0;
+       margin-top: -4.7rem;
+      padding: 135px 0 70px 0;
       background: linear-gradient(135deg,  #f0f7ff 0%, #6eaaea 80%);
       }
 

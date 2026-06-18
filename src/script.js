@@ -9,6 +9,12 @@
  * - Tombol telepon interaksi
  * ==================================================================
  */
+// navbar
+
+window.addEventListener('scroll', () => {
+  document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 10);
+})
+
 
 // ========== HAMBURGER MENU TOGGLE ==========
 // Menunggu hingga DOM sepenuhnya dimuat sebelum menjalankan script
