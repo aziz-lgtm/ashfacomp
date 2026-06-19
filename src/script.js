@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.addEventListener('click', closeMenu);
   }
 
+
   // Tutup menu ketika link di mobile nav diklik (dengan smooth scroll)
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
   mobileLinks.forEach(function (link) {

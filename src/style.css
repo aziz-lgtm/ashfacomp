@@ -157,7 +157,7 @@
       background: transparent;
       border: none;
       padding: 8px;
-      z-index: 1001;
+      z-index: 11101;
     }
 
     .hamburger span {
@@ -178,12 +178,14 @@
       transform: rotate(-45deg) translate(5px, -6px);
     }
 
+
+
     .mobile-nav {
       position: fixed;
       top: 0;
       right: -100%;
-      width: 80%;
-      max-width: 320px;
+      width: 100%;
+      max-width: 3690px;
       height: 100vh;
       background: white;
       box-shadow: -5px 0 30px rgba(0,0,0,0.15);
@@ -192,9 +194,9 @@
       transition: right 0.3s ease-in-out;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 4px;
     }
-
+    
     .mobile-nav.active {
       right: 0;
     }
@@ -208,14 +210,17 @@
       border-bottom: 1px solid var(--border-light);
       transition: color 0.2s;
       font-family: 'Poppins', sans-serif;
+      text-align: center;
     }
+
+    
 
     .mobile-nav a:hover {
       color: var(--accent);
     }
 
     .mobile-nav .btn-outline-call-mobile {
-      margin-top: 20px;
+      margin-top: 0px;
       background: transparent;
       border: 2px solid var(--accent);
       width: 100%;
@@ -246,7 +251,7 @@
       width: 100%;
       height: 100%;
       background: rgba(0,0,0,0.5);
-      z-index: 998;
+      z-index: 900;
       opacity: 0;
       visibility: hidden;
       transition: all 0.3s ease;
@@ -402,7 +407,7 @@
     .services-grid {
       display: grid;
       justify-content: center;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 30px;
     }
 
@@ -454,7 +459,7 @@
     /* Why Us */
     .whyus-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 30px;
       margin-top: 20px;
     }
@@ -647,7 +652,7 @@
     }
 
     /* ========== RESPONSIVE ========== */
-    @media (max-width: 825px) and (min-width: 641px) {
+    @media (max-width: 825px) {
       .nav-links {
         display: none;
       }
@@ -694,8 +699,8 @@
       position: relative;
       overflow: hidden;
       aspect-ratio: 1/1;
-      height: 22rem;
-      width: 22rem;   
+      
+      width: min(22rem, (100vw - 48px));   
       border-radius: 50px;
       object-fit: cover;
     }
@@ -705,6 +710,20 @@
       justify-content: center;
       padding-top: 32px;
             
+    }
+
+    .services-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .whyus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 20px;
     }
 
     .stat-item {
@@ -719,7 +738,7 @@
     }
 
     
-    @media (max-width: 640px) and (min-width: 581px) {
+    @media (max-width: 640px) {
       .nav-links {
         display: none;
       }
@@ -766,8 +785,8 @@
       position: relative;
       overflow: hidden;
       aspect-ratio: 1/1;
-      height: 22rem;
-      width: 22rem;   
+      
+      width: min(22rem, (100vw - 48px));   
       border-radius: 50px;
       object-fit: cover;
     }
@@ -784,10 +803,32 @@
       justify-content: center;;
     }
 
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      text-align: center;
+    }
+
       .contact-row {
         flex-direction: column;
       
       }
+
+       .services-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .whyus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 20px;
+    }
 
     }
 
@@ -834,7 +875,31 @@
       padding: 135px 0 70px 0;
       background: linear-gradient(135deg,  #f0f7ff 0%, #6eaaea 80%);
       }
+
+       .services-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1,1fr);
+      gap: 10px;
     }
 
-    
- 
+    .whyus-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      margin-top: 10px;
+    }
+    }
+
+    @media (max-width:374px) {
+      header div .navbar .logo {
+        font-size: 1.6rem;
+      }
+
+      .hero-mobile {
+      display: block;
+       margin-top: -7rem;
+      padding: 135px 0 70px 0;
+      background: linear-gradient(135deg,  #f0f7ff 0%, #6eaaea 80%);
+      }
+    }
